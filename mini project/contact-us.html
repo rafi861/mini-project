@@ -15,33 +15,40 @@
     <style>
         .form{
             width: 50%;
-            border: solid 1px;
+            border: solid 1px white;
             padding: 20px;
             border-radius: 20px;
+
         }
         nav{
             margin-bottom: 30px;
         }
         body{
-            background-color: rgb(186, 202, 202);
+            background-image : url('images-1200x1200_auto_x2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
         }
         .bread, li, a{
           text-decoration: none;
           color: black;
           
         }
-        .home{
+        .home,li,a{
           font-weight: normal;
           font-size: 20px;
+          color: aliceblue;
         }
         .rafi{
           font-weight: bold;
+
         }
         .nav1{
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         h2{
           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          color: aliceblue;
         }
         .form1{
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,14 +57,19 @@
           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
         .rafi{
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 25px;
+        }
+        label{
+          color: aliceblue;
+          font-size: large;
         }
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg " style="background-color: rgb(227, 236, 215);">
+  <nav class="navbar navbar-expand-lg " style="background-color: rgb(208, 219, 223);">
     <div class="container-fluid">
-      <a class="navbar-brand rafi" href="#">Rafi Films</a>
+      <a class="navbar-brand rafi" href="#"><span style="color: crimson;">Rafi</span>  Films</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,7 +79,7 @@
             <a class="nav-link active nav1" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav1" href="contact-us.html">Contact Us</a>
+            <a class="nav-link active nav1" href="contact-us.html">Contact Us</a>
           </li>
           
             <ul class="dropdown-menu">
@@ -79,7 +91,7 @@
           </li>
           
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex" role="search" >
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
@@ -87,12 +99,12 @@
     </div>
   </nav>
 
-    <nav style="--bs-breadcrumb-divider: '/'; color: black;" aria-label="breadcrumb" class="d-flex justify-content-center">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item home" ><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item home"><a href="contact-us.html">Contact Us</a></li>
-      </ol>
-    </nav>
+  <nav aria-label="breadcrumb" class="d-flex justify-content-center bread" style="font-weight: normal;">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html" class="home">Home</a></li>
+      <li class="breadcrumb-item"><a href="contact-us.html" class="home">Contact Us</a></li>
+    </ol>
+  </nav>
 
     <div class="container-fluid form" >
         <h2 align="center">Feedback Form</h2>
