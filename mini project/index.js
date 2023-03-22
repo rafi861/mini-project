@@ -13,9 +13,6 @@ navbar.addEventListener("mouseup", function() {
   navbar.style.backgroundColor = "#abcdef";
 });
 
-function btn() {
-  alert('closed')
-}
 
 document.body.addEventListener("click", function() {
   document.body.style.backgroundColor = "#808080";
