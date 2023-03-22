@@ -106,25 +106,46 @@
     </ol>
   </nav>
 
-    <div class="container-fluid form" >
+<form class="needs-validation">
+<div class="container-fluid form" >
         <h2 align="center">Feedback Form</h2>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label form1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label form1" id="label1" onclick="changeText()">Email Address</label>
+            <input type="email" class="form-control input" id="exampleInputEmail nama" required aria-describedby="emailHelp" placeholder="Enter Your Email Address" >
             <div id="emailHelp" class="form-text"></div>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label form1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label form1" id="label2" onclick="changeText1()">Password</label>
+            <input type="password" class="form-control input" id="exampleInputPassword1" required placeholder="Enter Your Password">
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label form1">Feedback</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label form1" id="label3" onclick="changeText2()">Feedback</label>
+                <textarea class="form-control input" id="exampleFormControlTextarea1" rows="3" required placeholder="Enter Your Feedback"></textarea>
               </div>
           </div>
           <div class="d-grid gap-2">
-            <button class="btn btn-primary submit" type="button">Submit</button>
+            <button class="btn btn-primary submit" type="submit" >Submit</button>
           </div>
-    </div>
+</div>
+</form>
     
+<script>
+  
+  function changeText() {
+	let text = document.getElementById("label1");
+	text.innerHTML = "Enter Your Email Address";
+}
+
+function changeText1() {
+	let text = document.getElementById("label2");
+	text.innerHTML = "Enter Your Password";
+}
+
+function changeText2() {
+	let text = document.getElementById("label3");
+	text.innerHTML = "Enter Your Feedback";
+}
+
+
+</script>
 </body>
 </html>
