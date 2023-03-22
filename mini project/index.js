@@ -1,4 +1,4 @@
-// Menangkap elemen dengan id "myNavbar"
+// Menangkap elemen dengan id "navi"
 const navbar = document.getElementById("navi");
 
 // Menambahkan event listener untuk event "mousedown"
